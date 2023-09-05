@@ -3,7 +3,8 @@ package com.imrhoms.demo.jdbc.model;
 import java.util.Date;
 
 /**
- * Person model class for mapping information from DB
+ * Person model class for mapping information from DB}
+ * @author homs
  */
 public class Person {
 

@@ -5,6 +5,18 @@ spring:
       enabled: true #enables web console in browser for h2
   datasource:
     url: jdbc:h2:mem:testdb #Sets db url to connect
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true #show SQL query in logs
+    properties:
+      hibernate:
+        generate_statistics: true #turns hibernate statistics 
+        format_sql: true #Format SQL query in log
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: default
+    
 #logging:
  # level: 
-  #  root: debug #Sets log level to debug to see all "auto-configurarion report"
+  #  root: debug #Sets log level to debug to see all "auto-configurarion report" 
